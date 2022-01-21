@@ -107,15 +107,13 @@ shared_ptr<Figure> CreateFigure(stringstream& is)
 	string figure;
 	is >> figure;
 
-	if (figure == "Triangle")
-    {
+	if (figure == "Triangle") {
 		int a, b, c;
 		is >> a >> b >> c;
 		return make_shared<Triang>(a, b, c);
-    }
+    	}
 
-	if (figure == "Rectangle")
-	{
+	if (figure == "Rectangle") {
 		int width, height;
 		is >> width >> height;
 		return make_shared<Rectang>(width, height);
