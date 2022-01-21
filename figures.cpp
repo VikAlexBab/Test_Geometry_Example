@@ -8,7 +8,7 @@ using namespace std;
 class Figure {
 public:
 	Figure(const string& _type) : type(_type) {}
-	virtual string Type() const {
+	string Type() const {
 		return type;
 	}
 	virtual double Perimeter() const = 0;
